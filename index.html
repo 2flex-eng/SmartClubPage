@@ -1,33 +1,92 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <title>Excluir conta - SmartClub</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Excluir conta — SmartClub</title>
+  <style>
+    :root{--bg:#f7fafc;--card:#ffffff;--muted:#6b7280;--accent:#0ea5a4}
+    body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; background:var(--bg); margin:0; color:#111827}
+    .wrap{max-width:820px;margin:36px auto;padding:20px}
+    .card{background:var(--card);border-radius:12px;padding:28px;box-shadow:0 6px 18px rgba(15,23,42,0.06)}
+    h1{margin:0 0 6px;font-size:20px}
+    p.lead{margin:0 0 18px;color:var(--muted)}
+    .steps{display:grid;grid-template-columns:1fr;gap:12px;margin:18px 0}
+    .step{border-left:4px solid var(--accent);background:#f8fafb;padding:12px;border-radius:8px}
+    .meta{display:flex;gap:12px;flex-wrap:wrap;margin:14px 0}
+    .meta a{display:inline-flex;align-items:center;gap:8px;padding:10px 12px;border-radius:8px;background:#fff;border:1px solid #eef2f7;text-decoration:none;color:#0f172a}
+    .meta a svg{width:18px;height:18px;opacity:.9}
+    ul{margin:8px 0 18px 20px}
+    .small{font-size:13px;color:var(--muted)}
+    footer{margin-top:18px;font-size:13px;color:var(--muted)}
+    .pill{background:#ecfeff;color:#064e4e;padding:6px 10px;border-radius:999px;font-weight:600;font-size:13px}
+    @media (min-width:640px){.steps{grid-template-columns:repeat(2,1fr)}}
+  </style>
 </head>
 <body>
-  <h1>Como solicitar exclusão da conta</h1>
-  <p>Para solicitar a exclusão da sua conta e de todos os dados associados, envie um e-mail para:</p>
-  
-  <p><strong>suporte@seuemail.com</strong></p>
+  <div class="wrap">
+    <div class="card">
+      <h1>Excluir conta — SmartClub</h1>
+      <p class="lead">Se você deseja excluir sua conta no SmartClub e todos os dados pessoais associados, siga as instruções abaixo. Você também pode entrar em contato para solicitar exclusão manualmente.</p>
 
-  <h2>Informações necessárias</h2>
-  <ul>
-    <li>Nome completo</li>
-    <li>CPF</li>
-    <li>Telefone</li>
-    <li>E-mail cadastrado no app</li>
-  </ul>
+      <div class="meta">
+        <a href="mailto:noreply2flex@gmail.com" title="Enviar e-mail para suporte">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 7.5v9A2.5 2.5 0 0 0 5.5 19h13A2.5 2.5 0 0 0 21 16.5v-9A2.5 2.5 0 0 0 18.5 5h-13A2.5 2.5 0 0 0 3 7.5z" stroke="#0f172a" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          noreply2flex@gmail.com
+        </a>
+        <a href="tel:+552139505540" title="Ligar para suporte">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.09 4.18 2 2 0 0 1 4 2h3a2 2 0 0 1 2 1.72c.12 1.05.36 2.07.71 3.03a2 2 0 0 1-.45 2.11L8.09 10.91a16 16 0 0 0 6 6l1.05-1.05a2 2 0 0 1 2.11-.45c.96.35 1.98.59 3.03.71A2 2 0 0 1 22 16.92z" stroke="#0f172a" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          (21) 3950-5540
+        </a>
+        <span class="pill">SmartClub</span>
+      </div>
 
-  <h2>O que será excluído</h2>
-  <ul>
-    <li>CPF</li>
-    <li>Telefone</li>
-    <li>Dados de perfil</li>
-    <li>Fotos enviadas</li>
-    <li>Histórico de prêmios</li>
-  </ul>
+      <h3>Como solicitar exclusão</h3>
+      <div class="steps">
+        <div class="step">
+          <strong>1. Envie um e-mail</strong>
+          <p class="small">Envie para <strong>noreply2flex@gmail.com</strong> com o assunto <em>Excluir minha conta — SmartClub</em>. No corpo do e-mail inclua:</p>
+          <ul>
+            <li>Nome completo</li>
+            <li>CPF</li>
+            <li>Telefone</li>
+            <li>E-mail cadastrado no app</li>
+            <li>Se possível, número do pedido ou comprovante (opcional)</li>
+          </ul>
+        </div>
 
-  <h2>Dados mantidos</h2>
-  <p>Alguns registros podem ser mantidos por até **30 dias** para fins legais e auditoria.</p>
+        <div class="step">
+          <strong>2. Confirmação</strong>
+          <p class="small">Receberemos sua solicitação e enviaremos uma confirmação por e-mail dentro de <strong>3 dias úteis</strong>. Para sua segurança, poderemos pedir confirmação adicional.</p>
+        </div>
+
+        <div class="step">
+          <strong>3. Exclusão dos dados</strong>
+          <p class="small">Após confirmação, excluiremos os dados listados abaixo do nosso banco de dados primário em até <strong>7 dias úteis</strong>.</p>
+          <ul>
+            <li>CPF</li>
+            <li>Telefone</li>
+            <li>Fotos e faturas enviadas</li>
+            <li>Dados de perfil (nome, e-mail, histórico de prêmios)</li>
+          </ul>
+        </div>
+
+        <div class="step">
+          <strong>4. Dados mantidos (retenção legal)</strong>
+          <p class="small">Alguns registros mínimos podem ser mantidos por até <strong>30 dias</strong> para fins legais, auditoria ou conformidade. Esses registros não conterão fotos nem documentos pessoais completos.</p>
+        </div>
+      </div>
+
+      <h3>Privacidade e segurança</h3>
+      <p class="small">Os dados são transmitidos via <strong>HTTPS</strong> e armazenados com medidas de segurança. Não compartilhamos seus dados com terceiros sem seu consentimento, exceto quando exigido por lei.</p>
+
+      <h3>Mais informações</h3>
+      <p class="small">Se tiver dúvidas, responda para <a href="mailto:noreply2flex@gmail.com">noreply2flex@gmail.com</a> ou ligue para <a href="tel:+552139505540">(21) 3950-5540</a>.</p>
+
+      <footer>
+        <p><strong>Observação:</strong> Esta página identifica o "SmartClub" como o titular dos dados e descreve o processo para exclusão. Se desejar, podemos adaptar o texto com prazo diferente ou procedimentos extras (ex.: verificação por SMS).</p>
+      </footer>
+    </div>
+  </div>
 </body>
 </html>
